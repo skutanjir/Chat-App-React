@@ -1,0 +1,123 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.close-modal-button {
+    background-color: #ff4b5c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.close-modal-button:hover {
+    background-color: #d43f47;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+.relative {
+    position: relative;
+}
+
+.relative .absolute {
+    top: -10px; /* Posisikan sedikit di atas ikon */
+    right: -10px; /* Posisikan sedikit ke kanan ikon */
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    padding: 0.1rem 0.4rem;
+    border-radius: 50%;
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.incoming {
+    background-color: #d1e7ff;
+    align-self: flex-start;
+}
+
+.outgoing {
+    background-color: #a0eec0;
+    align-self: flex-end;
+}
+
+
+.bg-blue-100 {
+    background-color: #ebf8ff;
+}
+
+.bg-green-100 {
+    background-color: #d1fae5;
+}
+
+.fullscreen-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullscreen-content {
+    position: relative;
+}
+
+.fullscreen-content img, .fullscreen-content video {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.preview-container img {
+    max-width: 100px;
+    margin-right: 10px;
+}
